@@ -1,0 +1,1 @@
+﻿Hello From SPA Tools Grunt Azure Plugin !
