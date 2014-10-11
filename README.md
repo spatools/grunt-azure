@@ -56,3 +56,4 @@ Downloading Blob : ([more informations][blob-download-options])
 
 ## Release History
 * 0.1.0 Initial Release (Include blob download / upload)
+* 0.1.1 Add Queue tasks (enqueue, dequeue, clear)
