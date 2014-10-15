@@ -18,6 +18,8 @@ Then specify your config:
 grunt.initConfig({
 ```
 
+## Blobs
+
 ### Uploading Blob : ([more informations][blob-upload-options])
 
 ```javascript
@@ -49,6 +51,8 @@ grunt.initConfig({
 		}
 	}
 ```
+
+## Queues
 
 ### Enqueue Message : ([more informations][queue-enqueue-options])
 
@@ -103,13 +107,79 @@ grunt.initConfig({
 	}
 ```
 
+## Tables
+
+### Entities Operations : ([more informations][table-entity-options])
+
+```javascript
+	'azure-table-insert": {
+		dist: {
+			options: {
+		        serviceOptions: '{connectionstring}',
+		        table: 'testtable'
+			},
+
+            entities: [
+                {
+                    PartitionKey: "partkey",
+                    RowKey: "key1",
+                    Property: "Value"
+                },
+                {
+                    PartitionKey: "partkey",
+                    RowKey: "key2",
+                    Property: "Value"
+                }
+            ]
+		}
+	}
+```
+
+Note: There are tasks for every entities operations :
+ * _insert_
+ * _update_
+ * _merge_
+ * _delete_
+ * _insertorupdete_
+ * _insertormerge_
+
+### Query Entities : ([more informations][table-query-options])
+
+```javascript
+	'azure-table-query": {
+		dist: {
+			options: {
+		        serviceOptions: '{connectionstring}',
+		        table: 'testtable',
+                top: 10,
+                pkPrefix: "prefix"
+			},
+
+            actions: [
+                function (entities, callback) {
+                    //...
+                    callback(null, result);
+                    // or
+                    callback(err);
+                },
+                function (entities) {
+                    console.log(work);
+                }
+            ]
+		}
+	}
+```
+
 [grunt]: https://github.com/gruntjs/grunt
 [blob-upload-options]: https://github.com/spatools/grunt-azure/wiki/Blob-Upload-Options
 [blob-download-options]: https://github.com/spatools/grunt-azure/wiki/Blob-Download-Options
 [queue-enqueue-options]: https://github.com/spatools/grunt-azure/wiki/Queue-Enqueue-Options
 [queue-dequeue-options]: https://github.com/spatools/grunt-azure/wiki/Queue-Dequeue-Options
 [queue-clear-options]: https://github.com/spatools/grunt-azure/wiki/Queue-Clear-Options
+[table-entity-options]: https://github.com/spatools/grunt-azure/wiki/Table-Entity-Options
+[table-query-options]: https://github.com/spatools/grunt-azure/wiki/Table-Query-Options
 
 ## Release History
 * 0.1.0 Initial Release (Include blob download / upload)
 * 0.1.1 Add Queue tasks (enqueue, dequeue, clear)
+* 0.1.2 Add Table tasks (insert, update, delete, merge, insertorupdate, insertormerge, query)
