@@ -1,7 +1,7 @@
 {
   "name": "grunt-azure",
   "description": "Grunt Azure - Allows to use Windows Azure Storage Blobs / Tables / Queues inside Grunt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/spatools/grunt-azure.git",
   "license": "MIT",
   "author": {
