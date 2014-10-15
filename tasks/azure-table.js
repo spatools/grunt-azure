@@ -311,7 +311,7 @@ module.exports = function (grunt) {
     );
     
     grunt.registerMultiTask(
-        "azure-table-insertupdate", 
+        "azure-table-insertorupdate", 
         "Azure Table Insert Or Update - Allows to insert entities or update if existing in Windows Azure Storage Table",
         createEntityTask("insertOrUpdate", "inserted or updated")
     );
@@ -323,7 +323,7 @@ module.exports = function (grunt) {
     );
     
     grunt.registerMultiTask(
-        "azure-table-insertmerge", 
+        "azure-table-insertormerge", 
         "Azure Table Insert - Allows to insert entities or merge if existing in Windows Azure Storage Table",
         createEntityTask("insertOrMerge", "inserted or merged")
     );
