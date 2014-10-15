@@ -28,7 +28,6 @@ module.exports = function (grunt) {
     var _ = grunt.util._,
         fs = require("fs"),
         async = require("async"),
-        mime = require("mime"),
         path = require("path"),
 
         filesystem = require("../lib/filesystem");
