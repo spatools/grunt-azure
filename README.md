@@ -57,7 +57,7 @@ grunt.initConfig({
 ### Enqueue Message : ([more informations][queue-enqueue-options])
 
 ```javascript
-	'azure-queue-enqueue": {
+	'azure-queue-enqueue': {
 		dist: {
 			options: {
 		        serviceOptions: '{connectionstring}',
@@ -71,7 +71,7 @@ grunt.initConfig({
 ### Dequeue Message : ([more informations][queue-dequeue-options])
 
 ```javascript
-	'azure-queue-dequeue": {
+	'azure-queue-dequeue': {
 		dist: {
 			options: {
 		        serviceOptions: '{connectionstring}',
@@ -97,7 +97,7 @@ grunt.initConfig({
 ### Clear Queue Messages : ([more informations][queue-clear-options])
 
 ```javascript
-	'azure-queue-clear": {
+	'azure-queue-clear': {
 		dist: {
 			options: {
 		        serviceOptions: '{connectionstring}',
@@ -112,7 +112,7 @@ grunt.initConfig({
 ### Entities Operations : ([more informations][table-entity-options])
 
 ```javascript
-	'azure-table-insert": {
+	'azure-table-insert': {
 		dist: {
 			options: {
 		        serviceOptions: '{connectionstring}',
@@ -140,13 +140,13 @@ Note: There are tasks for every entities operations :
  * _update_
  * _merge_
  * _delete_
- * _insertorupdete_
+ * _insertorupdate_
  * _insertormerge_
 
 ### Query Entities : ([more informations][table-query-options])
 
 ```javascript
-	'azure-table-query": {
+	'azure-table-query': {
 		dist: {
 			options: {
 		        serviceOptions: '{connectionstring}',
