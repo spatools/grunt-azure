@@ -1,0 +1,6 @@
+﻿{
+    "PartitionKey": "simplefile",
+    "RowKey": "Entity4",
+    "Title": "Entity #4",
+    "Description": "Lorem ipsum"
+}

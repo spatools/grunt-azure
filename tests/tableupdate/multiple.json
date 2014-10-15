@@ -1,0 +1,14 @@
+﻿[
+    {
+        "PartitionKey": "multiplefile",
+        "RowKey": "Entity5",
+        "Title": "Entity #5",
+        "Description": "Lorem ipsum - updated"
+    },
+    {
+        "PartitionKey": "multiplefile",
+        "RowKey": "Entity6",
+        "Title": "Entity #6",
+        "Description": "Lorem ipsum - updated"
+    }
+]

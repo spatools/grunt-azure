@@ -17,16 +17,18 @@ build/
 [Bb]in/
 [Oo]bj/
 
-tests/download/
-tests/queuebackup/
 node_modules/
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/
 
-# MSTest test Results
+# Test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+tests/download/
+tests/queuebackup/
+tests/tablebackup/
+
 
 *_i.c
 *_p.c
